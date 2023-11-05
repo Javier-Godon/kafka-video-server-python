@@ -1,0 +1,8 @@
+kafka:
+  topic: processed-video
+  producer:
+    bootstrap-servers: 10.152.183.90:9094
+    key-serializer: serializer
+    value-serializer: serializer
+    acks: all
+    compression-type: gzip
