@@ -1,3 +1,5 @@
+server:
+  port: 8002
 kafka:
   topic: processed-video
   producer:
