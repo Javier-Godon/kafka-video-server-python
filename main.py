@@ -1,8 +1,8 @@
 import uvicorn
 from fastapi import FastAPI
 
-from configuration.configuration import get_data
-from src.usecases.send_video_by_chunks.rest.router import router
+from app.configuration.configuration import get_data
+from app.file_chunks.usecases.send_video_by_chunks.rest.router import router
 
 app = FastAPI()
 

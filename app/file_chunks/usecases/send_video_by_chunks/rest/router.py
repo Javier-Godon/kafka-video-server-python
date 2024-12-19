@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
-from src.reader.data_reader import read_file_by_chunks
-from src.usecases.send_video_by_chunks.rest.video_data_request import VideoDataRequest
+from app.file_chunks.usecases.send_video_by_chunks.rest.video_data_request import VideoDataRequest
+from app.file_chunks.usecases.send_video_by_chunks.send_video_by_chunks_handler import read_file_by_chunks
 
 router = APIRouter()
 

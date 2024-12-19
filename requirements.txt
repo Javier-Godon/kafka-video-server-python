@@ -1,8 +1,13 @@
 pyyaml==6.0.1
-fastapi==0.104.0
+fastapi==0.110.0
 uvicorn==0.23.2
 pydantic==2.4.2
 pandas==2.1.2
-kafka-python==2.0.2
-confluent-kafka==2.3.0
+#kafka-python==2.0.2 till is compatible with python 3.12 use the fork kafka-python-ng
+#https://github.com/wbarnha/kafka-python-ng
+kafka-python-ng==2.2.3
+confluent-kafka==2.6.1
 uuid6==2023.5.2
+opencv-python==4.8.1.78
+
+

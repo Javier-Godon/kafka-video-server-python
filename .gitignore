@@ -243,6 +243,10 @@ celerybeat.pid
 # Environments
 .env
 .venv
+.venv3.12
+.venv3.13
+.venv3.14
+.venv_dagger3.12
 env/
 venv/
 ENV/
