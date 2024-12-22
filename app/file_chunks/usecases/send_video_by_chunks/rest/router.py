@@ -27,4 +27,4 @@ async def split_and_send_video(video_data_request: Annotated[str, Form(...)], vi
     return await read_file_by_chunks(parsed_request.sha_id,
                                      parsed_request.element_id, parsed_request.element_alias,
                                      parsed_request.unix_epoch_start, parsed_request.unix_epoch_end,
-                                     parsed_request.video_path, video)
+                                     parsed_request.video_path, video.file)
