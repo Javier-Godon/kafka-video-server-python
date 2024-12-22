@@ -1,8 +1,10 @@
 from dataclasses import dataclass
 
+from pydantic import BaseModel
+
 
 @dataclass
-class VideoDataRequest:
+class VideoDataRequest(BaseModel):
     sha_id: str
     element_id: str
     element_alias: str

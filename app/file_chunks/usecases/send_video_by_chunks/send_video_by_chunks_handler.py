@@ -30,7 +30,8 @@ def video_producer(data: VideoData):
 
 
 async def read_file_by_chunks(sha_id: str, element_id: str, element_alias: str, unix_epoch_start: int,
-                              unix_epoch_end: int, video_path: str):
+                              unix_epoch_end: int, video_path: str, video: bytes):
+    video = video
     uuid = str(uuid6.uuid7())
     buffer = 400_000
     chunk = 0

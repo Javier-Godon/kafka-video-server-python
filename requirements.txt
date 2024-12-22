@@ -9,6 +9,7 @@ kafka-python-ng==2.2.3
 confluent-kafka==2.6.1
 uuid6==2023.5.2
 opencv-python==4.8.1.78
+python-multipart~=0.0.20
 #dagger_python
 pip~=24.3.1
 dagger-io~=0.15.1
