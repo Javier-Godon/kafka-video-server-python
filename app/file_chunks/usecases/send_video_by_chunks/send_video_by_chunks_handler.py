@@ -12,8 +12,11 @@ from app.configuration.configuration import get_data
 from definitions import ROOT_DIR
 from app.file_chunks.domain.video_data import VideoData
 
+import logging
+logger = logging.getLogger(__name__)
 
 def video_producer(data: VideoData):
+    logging.info(f'instantiating kafka producer. Bootstrap_servers: {get_data()['kafka']['producer']['bootstrap-servers']}')
     element_id = '49b76588-c2ba-4166-95f9-5a59cb47a195'
     producer = KafkaProducer(bootstrap_servers=get_data()['kafka']['producer']['bootstrap-servers'],
                              key_serializer=str.encode,
