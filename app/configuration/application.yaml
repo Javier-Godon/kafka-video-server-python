@@ -5,7 +5,7 @@ kafka:
     processed: processed-video
     streaming: streaming-video
   producer:
-    bootstrap-servers: 10.152.183.90:9094
+    bootstrap-servers: 10.152.183.238:9094
 #    bootstrap-servers: blue-cluster-kafka-bootstrap.kafka.svc.cluster.local:9092
     key-serializer: serializer
     value-serializer: serializer
